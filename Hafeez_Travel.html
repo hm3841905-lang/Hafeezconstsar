@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hafeez Travel | Car Booking Pakistan</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,"Noto Nastaliq Urdu",sans-serif;background:#f5f7fb;color:#172033}
+header{background:linear-gradient(135deg,#071b3a,#0d5ca8);color:#fff;padding:22px 18px;text-align:center}
+.logo{font-size:32px;font-weight:800}.tag{margin-top:6px;color:#d9ecff}
+.hero{padding:35px 18px;text-align:center;background:linear-gradient(180deg,#0d5ca8,#1689d4);color:white}
+.hero h1{font-size:32px;margin:8px}.hero p{font-size:18px}
+.btn{display:inline-block;padding:13px 22px;border-radius:10px;text-decoration:none;font-weight:bold;margin:7px;background:#fff;color:#075ca9}
+.whatsapp{background:#18b96b;color:white}
+.container{max-width:900px;margin:auto;padding:22px 16px}
+.card{background:white;border-radius:16px;padding:20px;margin:16px 0;box-shadow:0 5px 20px #00000012}
+h2{color:#075ca9;margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.vehicle{border:1px solid #dde5ef;border-radius:12px;padding:16px;text-align:center;background:#fafcff}
+.vehicle b{display:block;font-size:20px;margin-bottom:7px}
+label{display:block;margin:10px 0 5px;font-weight:bold}
+input,select{width:100%;padding:12px;border:1px solid #ccd5e0;border-radius:9px;font-size:16px}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.submit{width:100%;border:0;cursor:pointer;background:#075ca9;color:#fff;padding:14px;border-radius:10px;font-size:18px;font-weight:bold;margin-top:14px}
+.routes{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.route{padding:14px;border-radius:10px;background:#eef6ff;text-align:center}
+footer{background:#071b3a;color:white;text-align:center;padding:25px 15px;margin-top:20px}
+.phone{font-size:24px;font-weight:bold;direction:ltr;display:inline-block}
+@media(max-width:600px){.row{grid-template-columns:1fr}.hero h1{font-size:26px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">🚘 Hafeez Travel</div>
+  <div class="tag">پاکستان بھر میں کار بکنگ اور ٹریول سروس</div>
+</header>
+
+<section class="hero">
+  <h1>اپنی سواری ابھی بک کریں</h1>
+  <p>کراچی سٹی رائیڈ، انٹر سٹی سفر، ایئرپورٹ پک اَپ اور ڈراپ</p>
+  <a class="btn whatsapp" href="https://wa.me/923452597849" target="_blank">WhatsApp پر بکنگ</a>
+  <a class="btn" href="tel:+923452597849">📞 0345 2597849</a>
+</section>
+
+<main class="container">
+<section class="card">
+<h2>🚗 ہماری گاڑیاں</h2>
+<div class="grid">
+  <div class="vehicle"><b>🚙 Alto</b>کم بجٹ سفر</div>
+  <div class="vehicle"><b>🚘 Corolla</b>آرام دہ سفر</div>
+  <div class="vehicle"><b>🚐 Hiace</b>فیملی / گروپ</div>
+  <div class="vehicle"><b>🚘 Fortuner</b>پریمیم سفر</div>
+</div>
+</section>
+
+<section class="card">
+<h2>📍 مقبول روٹس</h2>
+<div class="routes">
+<div class="route">کراچی → لاہور</div>
+<div class="route">کراچی → اسلام آباد</div>
+<div class="route">کراچی → مری</div>
+<div class="route">کراچی → مظفرآباد</div>
+<div class="route">کراچی → دیگر شہر</div>
+</div>
+</section>
+
+<section class="card">
+<h2>📅 آن لائن بکنگ</h2>
+<form id="bookingForm">
+<label>آپ کا نام</label>
+<input id="name" required placeholder="نام لکھیں">
+
+<div class="row">
+<div><label>فون نمبر</label><input id="phone" required placeholder="03XXXXXXXXX"></div>
+<div><label>گاڑی</label>
+<select id="car"><option>Alto</option><option>Corolla</option><option>Hiace</option><option>Fortuner</option></select>
+</div>
+</div>
+
+<div class="row">
+<div><label>روانگی کی تاریخ</label><input id="date" type="date" required></div>
+<div><label>وقت</label><input id="time" type="time" required></div>
+</div>
+
+<div class="row">
+<div><label>کہاں سے؟</label><input id="from" required placeholder="مثلاً کراچی"></div>
+<div><label>کہاں تک؟</label><input id="to" required placeholder="مثلاً لاہور"></div>
+</div>
+
+<label>اضافی معلومات</label>
+<input id="note" placeholder="مثلاً ایئرپورٹ پک اَپ">
+
+<button class="submit" type="submit">WhatsApp پر بکنگ بھیجیں</button>
+</form>
+</section>
+
+<section class="card" style="text-align:center">
+<h2>📞 رابطہ</h2>
+<p>بکنگ کے لیے صرف اسی نمبر پر رابطہ کریں:</p>
+<div class="phone">0345 2597849</div><br>
+<a class="btn whatsapp" href="https://wa.me/923452597849" target="_blank">WhatsApp رابطہ</a>
+</section>
+</main>
+
+<footer>
+<strong>Hafeez Travel</strong><br>
+Car Booking • Airport Transfer • Intercity Travel<br><br>
+0345 2597849
+</footer>
+
+<script>
+document.getElementById("bookingForm").addEventListener("submit", function(e){
+ e.preventDefault();
+ const msg =
+ `*Hafeez Travel Booking*%0A%0A`+
+ `نام: ${document.getElementById("name").value}%0A`+
+ `فون: ${document.getElementById("phone").value}%0A`+
+ `گاڑی: ${document.getElementById("car").value}%0A`+
+ `تاریخ: ${document.getElementById("date").value}%0A`+
+ `وقت: ${document.getElementById("time").value}%0A`+
+ `کہاں سے: ${document.getElementById("from").value}%0A`+
+ `کہاں تک: ${document.getElementById("to").value}%0A`+
+ `اضافی معلومات: ${document.getElementById("note").value}`;
+ window.open("https://wa.me/923452597849?text="+msg,"_blank");
+});
+</script>
+</body>
+</html>
